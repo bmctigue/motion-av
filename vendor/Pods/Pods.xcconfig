@@ -1,0 +1,8 @@
+ALWAYS_SEARCH_USER_PATHS = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
+OTHER_LDFLAGS = -ObjC
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/DDExpandableButton" "${PODS_ROOT}/BuildHeaders/FoundationExtension" "${PODS_ROOT}/BuildHeaders/FoundationExtension/UIKitExtension" "${PODS_ROOT}/BuildHeaders/UI7Kit" "${PODS_ROOT}/BuildHeaders/UI7Kit/UI7Kit" "${PODS_ROOT}/BuildHeaders/cdebug"
+PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/DDExpandableButton" "${PODS_ROOT}/Headers/FoundationExtension" "${PODS_ROOT}/Headers/FoundationExtension/UIKitExtension" "${PODS_ROOT}/Headers/UI7Kit" "${PODS_ROOT}/Headers/UI7Kit/UI7Kit" "${PODS_ROOT}/Headers/cdebug"
+PODS_ROOT = ${SRCROOT}/Pods

@@ -1,0 +1,1 @@
+../../FoundationExtension/FoundationExtension/NSAString.h

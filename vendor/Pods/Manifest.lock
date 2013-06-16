@@ -1,0 +1,27 @@
+PODS:
+  - cdebug (0.1.1)
+  - DDExpandableButton (0.0.1)
+  - FoundationExtension (0.30.1):
+    - cdebug (~> 0.1)
+    - FoundationExtension/CocoaExtension
+    - FoundationExtension/FoundationExtension
+    - FoundationExtension/UIKitExtension
+  - FoundationExtension/FoundationExtension (0.30.1):
+    - cdebug (~> 0.1)
+  - FoundationExtension/UIKitExtension (0.30.1):
+    - cdebug (~> 0.1)
+    - FoundationExtension/FoundationExtension
+  - UI7Kit (0.0.4):
+    - FoundationExtension (~> 0.29)
+
+DEPENDENCIES:
+  - DDExpandableButton (~> 0.0.1)
+  - UI7Kit
+
+SPEC CHECKSUMS:
+  cdebug: 8c2ca6363107205eaf777295736c0ec12ba490bd
+  DDExpandableButton: 98a3b82598ec21e43048ccc69e637ffe1d216f27
+  FoundationExtension: 59bb791acf03a6741c9cc7da62a1eb8a810aa5e5
+  UI7Kit: 16e3cfe9d1803c49517c6779fd907c911453f3c8
+
+COCOAPODS: 0.20.2
