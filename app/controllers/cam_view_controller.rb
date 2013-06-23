@@ -167,9 +167,19 @@ class CamViewController < UIViewController
   end
 
   def toggleFlashlight(sender)
-    if @captureManager.backFacingCamera.hasTorch
+    if @captureManager.backFacingCamera.hasTorch and @captureManager.backFacingCamera.hasFlash
       @captureManager.backFacingCamera.lockForConfiguration(nil)
-      @captureManager.backFacingCamera.setTorchMode(2 - sender.selectedItem)
+      case @captureManager.backFacingCamera.torchMode
+        when AVCaptureTorchModeAuto
+          @captureManager.backFacingCamera.setTorchMode(AVCaptureTorchModeOn)
+          @captureManager.backFacingCamera.setFlashMode(AVCaptureFlashModeOn)
+        when AVCaptureTorchModeOn
+          @captureManager.backFacingCamera.setTorchMode(AVCaptureTorchModeOff)
+          @captureManager.backFacingCamera.setFlashMode(AVCaptureFlashModeOff)
+        when AVCaptureTorchModeOff
+          @captureManager.backFacingCamera.setTorchMode(AVCaptureTorchModeAuto)
+          @captureManager.backFacingCamera.setFlashMode(AVCaptureFlashModeAuto)
+      end
       @captureManager.backFacingCamera.unlockForConfiguration
     end   
   end
